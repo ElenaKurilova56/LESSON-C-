@@ -72,23 +72,23 @@ int num = Convert.ToInt32(Console.ReadLine());
 if (num < 10000 | num > 99999)
 {
     Console.WriteLine("Число не пятизначное.");
+    return;
+}
+
+int figure1 = num / 10000;
+
+int figure2 = num / 1000 % 10;
+
+int figure4 = num / 10 % 10;
+
+int figure5 = num % 10;
+
+if (figure1 == figure5 & figure2 == figure4)
+{
+    Console.WriteLine("Число является палиндромом.");
 }
 else
 {
-    int figure1 = num / 10000;
-
-    int figure2 = num / 1000 % 10;
-
-    int figure4 = num / 10 % 10;
-
-    int figure5 = num % 10;
-
-    if (figure1 == figure5 & figure2 == figure4)
-    {
-        Console.WriteLine("Число является палиндромом.");
-    }
-    else
-    {
-        Console.WriteLine("Число не является палиндромом.");
-    }
+    Console.WriteLine("Число не является палиндромом.");
 }*/
+
