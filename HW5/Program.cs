@@ -40,7 +40,7 @@ Console.WriteLine($"Сумма элементов на нечетных пози
 //Задайте массив вещественных чисел. Найдите разницу между максимальным и минимальным элементов массива.
 //[3.22, 4.2, 1.15, 77.15, 65.2] => 77.15 - 1.15 = 76
 
-int[] array = new int[5];
+/*int[] array = new int[5];
 int max = array[0];
 int min = array[0];
 Console.Write("[");
@@ -55,4 +55,4 @@ for (int i = 0; i < array.Length; i++)
 
 Console.Write("\b\b]");
 Console.WriteLine();
-Console.WriteLine($"Разница между максимальным и минимальным элементами массива: {max-min}");
+Console.WriteLine($"Разница между максимальным и минимальным элементами массива: {max-min}");*/
