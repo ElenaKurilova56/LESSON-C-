@@ -8,3 +8,20 @@
 
     	return value;
 	}
+
+Заполнение двумерного массива случайными вещественными числами
+
+	void GenerateArray(int m, int n) // Генерировать массив
+ 	{
+     		double[,] randomArray = new double[m,n];
+     		for (int i = 0; i < randomArray.GetLength(0); i++)
+     		{
+        		Console.WriteLine();
+        		for (int j = 0; j < randomArray.GetLength(1); j++)
+         		{ 
+            		randomArray[i,j] = Math.Round(new Random().NextDouble() * 10, 1); // увеличен на 10 с одним знаком после ,
+           		Console.Write($"{randomArray[i,j]}  ");
+         		}
+
+    		}
+ 	}
