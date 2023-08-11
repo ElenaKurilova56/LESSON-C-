@@ -100,14 +100,17 @@ int[,] Arr(int m,int n)
     }
     return randomArray;
 }
+
 int[,] arr = Arr(3,4);
 int sum = arr[0,0];
+double num = 0;
 for (int j = 0; j < arr.GetLength(1); j++)
 {
   for (int i = 0; i < arr.GetLength(0); i++)
   {
     if(i<arr.GetLength(0)-1)
-      sum = (sum+arr[i+1,j])/arr.GetLength(1)-1;
+      sum = sum+arr[i+1,j];
   }
+  num = sum/arr.GetLength(1)+1;
 }
-Console.WriteLine(sum);
+Console.WriteLine(num);
