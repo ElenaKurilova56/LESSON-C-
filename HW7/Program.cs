@@ -102,15 +102,15 @@ int[,] Arr(int m,int n)
 }
 
 int[,] arr = Arr(3,4);
-int sum = arr[0,0];
+double sum = 0;
 double num = 0;
 for (int j = 0; j < arr.GetLength(1); j++)
 {
   for (int i = 0; i < arr.GetLength(0); i++)
   {
-    if(i<arr.GetLength(0)-1)
-      sum = sum+arr[i+1,j];
+      sum = sum+arr[i,j];
   }
-  num = sum/arr.GetLength(1)+1;
+  num = sum/arr.GetLength(0);
+  Console.Write($"{num} ");
+  sum = 0; num = 0;
 }
-Console.WriteLine(num);
